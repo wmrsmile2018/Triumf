@@ -1,0 +1,85 @@
+.notes {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #f0f0f0;
+  .notes__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fafafa;
+    height: 35px;
+
+    p {
+      width: 250px;
+      text-align: center;
+      padding-top: 5px;
+      border-right: 1px solid #f0f0f0;
+      margin: 0px;
+    }
+
+    .notes__color {
+      width: 100px;
+    }
+
+    .notes__action {
+      width: 100px;
+    }
+  }
+
+  .notes__input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 34px;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+
+    input {
+      position: relative;
+      width: 100%;
+    }
+
+    .notes__inputName {
+      width: 249px;
+      border-right: 1px solid #f0f0f0;
+    }
+
+    .notes__inputType {
+      width: 250px;
+      border-right: 1px solid #f0f0f0;
+    }
+
+    .notes__color {
+      display: flex;
+      flex-direction: row;
+      width: 99px;
+      border-right: 1px solid #f0f0f0;
+
+      .notes__colorShow {
+        width: 98px;
+        height: 33px;
+        border-radius: 10px;
+        display: inline;
+        border: 1px solid #888888;
+      }
+
+      .notes_colorPicker {
+        position: absolute;
+        right: 200px;
+        top: 17px;
+        z-index: 1;
+      }
+    }
+
+    .notes__addItem {
+      width: 100px;
+      height: 33px;
+
+      button {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

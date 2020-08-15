@@ -1,0 +1,119 @@
+
+.draggable-list {
+  padding: 0;
+  margin: 0;
+
+  .dragover {
+    background: blue;
+  }
+
+  .dragging {
+    background: #F9F9D7;
+  }
+
+  .blink {
+		animation: blink 2s linear infinite;
+  }
+
+  .item__list {
+     list-style-type: none;
+     display: flex;
+     flex-direction: row;
+     border-bottom: 1px solid #f0f0f0;
+
+     .item__color {
+       width: 99px;
+       border-right: 1px solid #f0f0f0;
+     }
+
+     .item__input {
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       height: 34px;
+       justify-content: space-between;
+       border-bottom: 1px solid #f0f0f0;
+
+       input {
+         position: relative;
+         width: 100%;
+       }
+
+       .item__inputName {
+         width: 248px;
+         border-right: 1px solid #f0f0f0;
+       }
+
+       .item__inputType {
+         width: 249px;
+         border-right: 1px solid #f0f0f0;
+       }
+
+       .item__color {
+         display: flex;
+         flex-direction: row;
+         width: 99px;
+         border-right: 1px solid #f0f0f0;
+         position: relative;
+
+         .item__colorShow {
+           width: 98px;
+           height: 33px;
+           border-radius: 10px;
+           display: inline;
+           border: 1px solid #888888;
+         }
+
+         .item_colorPicker {
+           position: absolute;
+           right: -354px;
+           top: -2px;
+           z-index: 1;
+         }
+       }
+     }
+
+     .item__name, .item__type  {
+       width: 250px;
+       height: 33px;
+       padding-left: 20px;
+       padding-top: 5px;
+       border-right: 1px solid #f0f0f0;
+     }
+
+     .item__action {
+       width: 100px;
+       display: flex;
+       flex-direction: row;
+
+       .item__remove {
+         width: 50px;
+         border: none;
+         border-left: 1px solid #f0f0f0;
+         padding-top: 5px;
+         text-align: center;
+       }
+       .item__edit, .item__save {
+         padding-top: 5px;
+         width: 50px;
+         text-align: center;
+       }
+
+       img {
+         height: 20px;
+         cursor: pointer;
+       }
+     }
+
+
+
+
+
+  }
+}
+
+@keyframes blink{
+0%{border: 2px dotted blue;}
+50%{border: 2px dotted green;}
+100%{border: 2px dotted red;}
+}

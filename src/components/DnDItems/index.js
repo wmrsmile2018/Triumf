@@ -42,8 +42,12 @@ class DnDListItem extends Component {
   handleOnClickSave = (e) => {
     const { isEdit, name, color, type, id } = this.state;
     const { editNote } = this.props;
-    this.setState({isEdit: !isEdit})
-    editNote({id: id, name: name, color: color, type: type})
+    if (name && type) {
+      this.setState({isEdit: !isEdit})
+      editNote({id: id, name: name, color: color, type: type})
+      return ;
+    }
+    alert("Заполните поля")
   }
 
   handleOnClickEdit = (e) => {

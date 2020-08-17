@@ -9,7 +9,7 @@ git clone https://github.com/wmrsmile2018/Triumf.git
 ## Installation:
 
 ```
-cd Triumf/project/
+cd Triumf/
 npm install
 ```
 
@@ -19,13 +19,13 @@ Project work at ```localhost:8080```
 
 via npm start
 ```
-cd Triumf/project/
+cd Triumf/
 npm start
 ```
 
 via npm run build
 ```
-cd Triumf/project
+cd Triumf/
 npm run build
 npm install -g serve
 serve -l 8080 -s dist

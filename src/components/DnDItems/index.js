@@ -161,6 +161,10 @@ class DnDListItem extends Component {
           </>
         }
         <div className="item__action">
+          <span data-id={id} className="item__move">
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/material-line/1024/open_with-512.png" alt="move"/>
+          </span>
           {isEdit ?
             <span data-id={id} className="item__save">
               <img onClick={this.handleOnClickSave}
@@ -192,7 +196,7 @@ class DnDItems extends Component {
       this.setState({ list: this.props.list})
     }
   }
-  
+
   replaceList = (dragSourceTitle, dropTargetTitle) => {
     const { replaceNote } = this.props;
     let dragSourceIndex = this.state.list.findIndex((item) => item.id == dragSourceTitle);

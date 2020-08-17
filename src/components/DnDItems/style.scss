@@ -82,7 +82,7 @@
      }
 
      .item__action {
-       width: 100px;
+       width: 150px;
        display: flex;
        flex-direction: row;
 
@@ -93,10 +93,11 @@
          padding-top: 5px;
          text-align: center;
        }
-       .item__edit, .item__save {
+       .item__edit, .item__save, .item__move {
          padding-top: 5px;
          width: 50px;
          text-align: center;
+         border-left: 1px solid #f0f0f0;
        }
 
        img {
